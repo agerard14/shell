@@ -1,2 +1,2 @@
 #!/bin/bash
-chown root school
+chgrp school hello
