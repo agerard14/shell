@@ -1,2 +1,2 @@
 #!/bin/bash
-chgrp vincent:guillaume hello
+chown -s vincent:guillaume hello
