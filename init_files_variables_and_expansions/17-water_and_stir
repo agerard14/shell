@@ -1,2 +1,2 @@
 #!/bin/bash
-pintf $((${WATER}+{STIR})) | printenv
+printenv $((${WATER}+${STIR})) | printf 
