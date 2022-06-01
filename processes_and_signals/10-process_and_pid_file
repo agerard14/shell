@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Write a Bash script that:Creates the file /var/run/myscript.pid containing its PIDDisplays To infinity and beyond indefinitelyDisplays I hate the kill command when receiving a SIGTERM signalDisplays Y U no love me?! when receiving a SIGINT signalDeletes the file /var/run/myscript.pid and terminates itself when receiving a SiGQUIT or SIGTERM signal
 deleteandkill() {
-sudo rm /var/run/myscript.pid | kill -9 /var/run/myscript.pid
+sudo rm /var/run/myscript.pid ; exit; 
 }
 trap 'echo "Y U no love me?!"' SIGINT
 trap 'echo "I hate the kill command"; deleteandkill' SIGTERM
